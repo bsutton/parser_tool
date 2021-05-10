@@ -1,0 +1,42 @@
+%{
+int _escape(int c) {
+  switch(c) {
+    case 110:
+     return 0xA;
+    case 114:
+      return 0xD;
+    case 116:
+      return 0x9;
+  }
+
+  return c;
+}
+}%
+
+CharacterClass =
+  'ranges'
+  ;
+
+'ranges' =
+  @range+
+  ;
+
+List<int> @range =
+  s:@rangeChar "-" e:@rangeChar { $$ = [s, e]; }
+  / c:@rangeChar{ $$ = [c, c]; }
+  ;
+
+int @rangeChar =
+  "\\" c:[nrt\]\\] { $$ = _escape(c); }
+  / @hexNumber
+  / ![\\\]] !@eol c:.
+  ;
+
+int @hexNumber =
+  [\\] "u" d:<[0-9A-Fa-f]+> { $$ = int.parse(d, radix: 16); }
+  ;
+
+@eol =
+  "\r\n"
+  / [\n\r]
+  ;

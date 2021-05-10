@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "example",
+            "program": "example/example.dart",
+            "request": "launch",
+            "type": "dart",
+        },
+        {
+            "name": "example2",
+            "program": "example/example2.dart",
+            "request": "launch",
+            "type": "dart",
+        },
+        {
+            "name": "test",
+            "program": "test/test.dart",
+            "request": "launch",
+            "type": "dart",
+        },
+        {
+            "name": "test1",
+            "program": "test/test1.dart",
+            "request": "launch",
+            "type": "dart",
+        },
+        {
+            "name": "tool",
+            "program": "tool/test.dart",
+            "request": "launch",
+            "type": "dart",
+        }
+    ]
+}

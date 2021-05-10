@@ -1,31 +1,3 @@
-# parser_tool
-
-Version 0.1.0 (BETA)  
-
-Parser tool is a real-time compiler and runtime engine for strongly typed PEG parsers.  
-
-Parser tool contains libraries that allow you to create strongly typed PEG parsers. The tool contains a compiler that cospiles a parser in real time and an engine to execute the compiled parsers.  
-
-### Advantages
-
-- Strongly typed parsers
-- Sufficiently high performance
-- Allows you to debug the parser through tracing support with information about the parsing progress
-- Expression notations are available during debugging
-- Allows you to print out grammar
-
-### Disvantages
-
-- Not as fast parsers as compared to parsers that compile directly into source code
-- The debugging process is not so clear and convenient
-
-### Planned features
-
-- Adding a semantic predicate
-
-### Example
-
-```dart
 import 'package:parser_tool/grammar.dart';
 import 'package:parser_tool/grammar_builder.dart';
 import 'package:parser_tool/grammar_compiler.dart';
@@ -184,7 +156,3 @@ Parser<E> compileGrammar<E>(Grammar<E> grammar,
   final compiler = GrammarCompiler<E>(options);
   return compiler.compile(grammar);
 }
-
-```
-
-To be continued...

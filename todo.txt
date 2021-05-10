@@ -1,0 +1,6 @@
+repeater toString
+???state toString() escape \n\t\v\r
+ranges repeaters?
+???add semantic predicates
+add deep analisys by demand
+speed up resolvers
