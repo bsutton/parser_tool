@@ -1,10 +1,10 @@
 # parser_tool
 
-Version 0.1.0 (BETA)  
+Version 0.1.1 (BETA)  
 
 Parser tool is a real-time compiler and runtime engine for strongly typed PEG parsers.  
 
-Parser tool contains libraries that allow you to create strongly typed PEG parsers. The tool contains a compiler that cospiles a parser in real time and an engine to execute the compiled parsers.  
+Parser tool contains libraries that allow you to create strongly typed PEG parsers. The tool contains a compiler that compiles a parser in real time and an engine to execute the compiled parsers.  
 
 ### Advantages
 

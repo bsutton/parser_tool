@@ -1,5 +1,5 @@
 name: parser_tool
-version: 0.1.0
+version: 0.1.1
 description: Parser tool is a real-time compiler and runtime engine for strongly typed PEG parsers
 homepage: https://github.com/mezoni/parser_tool
 environment:
